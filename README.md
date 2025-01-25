@@ -10,6 +10,7 @@ stats for players.  I want to be able to calculate MVP for
 a team based on custom metrics that I will need to calculate.
 
 To do:
+- [ ] Create python script to traverse json and output java class
 - [ ] Pull data from source
 - [ ] Parse data
 - [ ] Feed data into PostgreSQL database
