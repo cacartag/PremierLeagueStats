@@ -42,7 +42,14 @@ public class PremierLeagueStatesApplication {
 
 				JsonNode allTeams = node.get("teams");
 
-				allTeams.forEach(team -> System.out.println(team.get("name").asText()));
+				allTeams.forEach(team -> {
+					System.out.println(team.get("name").asText());
+					System.out.println(team.get("venue").asText());
+					JsonNode squad = team.get("squad");
+					squad.forEach(player -> {
+						System.out.println("name: " + player.get("name") + ", position: " + player.get("position") + ", dateOfBirth: " + player.get("dateOfBirth") + ", nationality: " + player.get("nationality"));
+					});
+				});
 
 //				System.out.println("count: " + node.get("count").asInt());
 
