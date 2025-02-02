@@ -9,4 +9,7 @@ public interface CoachRepository extends ReactiveCrudRepository<Coach, Long> {
 //    @Query("SELECT * FROM coach")
 //    Flux<Coach> findAll();
 
+//    @Query("Select * from coach")
+//    Flux<Coach> testing();
+
 }

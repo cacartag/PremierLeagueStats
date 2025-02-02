@@ -1,0 +1,8 @@
+18:37:56.227 [main] INFO  c.f.P.PremierLeagueStatesApplication - Starting PremierLeagueStatesApplication using Java 23.0.1 with PID 34805 (/Users/christophercartagena/Documents/PremierLeagueStats/target/classes started by christophercartagena in /Users/christophercartagena/Documents/PremierLeagueStats)
+18:37:56.227 [main] INFO  c.f.P.PremierLeagueStatesApplication - No active profile set, falling back to 1 default profile: "default"
+18:37:56.362 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+18:37:56.408 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 R2DBC repository interface.
+18:37:56.502 [main] DEBUG io.r2dbc.postgresql.Extensions - Discovering Extensions using ServiceLoader
+18:37:56.502 [main] DEBUG io.r2dbc.postgresql.Extensions - Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+18:37:56.640 [main] INFO  c.f.P.PremierLeagueStatesApplication - Started PremierLeagueStatesApplication in 0.6 seconds (process running for 0.743)
+18:37:56.649 [main] INFO  c.f.P.PremierLeagueStatesApplication - 
