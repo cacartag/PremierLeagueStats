@@ -1,4 +1,4 @@
-package com.footbal.PremierLeagueStates;
+package com.footbal.PremierLeagueStates.Servlets;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.footbal.PremierLeagueStates.DBClasses.Coach;
@@ -14,8 +14,6 @@ import java.time.Duration;
 import java.util.Scanner;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.context.annotation.Bean;
-import reactor.core.publisher.Flux;
 
 //@SpringBootApplication(exclude = {
 //		R2dbcAutoConfiguration.class,
@@ -29,6 +27,7 @@ public class PremierLeagueStatesApplication {
 	public static void main(String[] args){
 		SpringApplication.run(PremierLeagueStatesApplication.class, args);
 	}
+
 
 	public void parse(CoachRepository repository) {
 		try{
@@ -64,9 +63,6 @@ public class PremierLeagueStatesApplication {
 									coach.get("nationality").asText()))
 							.block(Duration.ofSeconds(2));
 
-
-
-
 					JsonNode squad = team.get("squad");
 					squad.forEach(player ->
 							System.out.println("Player: name: " + player.get("name") +
@@ -84,7 +80,7 @@ public class PremierLeagueStatesApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(PremierLeagueStatesApplication.class);
 
-	@Bean
+//	@Bean
 	public CommandLineRunner insertCoaches(CoachRepository repository){
 		return _ -> {
 			parse(repository);

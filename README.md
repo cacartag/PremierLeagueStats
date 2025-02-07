@@ -11,6 +11,7 @@ a team based on custom metrics that I will need to calculate.
 
 To do:
 - [ ] Create python script to traverse json and output java class
-- [ ] Pull data from source
-- [ ] Parse data
-- [ ] Feed data into PostgreSQL database
+- [x] Pull data from source
+- [x] Parse data
+- [x] Feed data into PostgreSQL database
+- [ ] Create a controller to view data from PostgreSQL database
